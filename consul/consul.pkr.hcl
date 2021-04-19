@@ -25,7 +25,7 @@ source "amazon-ebs" "root_ebs" {
   instance_type   = var.instance_type
   region          = var.region
   ssh_username    = "ubuntu"
-  profile         = "marin"
+  profile         = "default"
 
   // For testing only
   force_deregister = true
