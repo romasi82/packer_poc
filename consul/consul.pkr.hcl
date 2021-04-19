@@ -76,11 +76,6 @@ build {
     pause_before = "5s"
   }
 
-  // provisioner "shell" {
-  //   inline = [ "/tmp/packer/consul/scripts/install_dnsmasq.sh" ]
-  //   pause_before = "5s"
-  // }
-
   provisioner "shell" {
     inline = [ "/tmp/packer/consul/scripts/configure_dns.sh" ]
     pause_before = "5s"
